@@ -1,0 +1,54 @@
+body {
+    font-family: 'Instrument Serif';
+    padding: 35px 35px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    font-size: 35px;
+    font-family: 'Pixelify Sans';
+    color: rgb(94, 94, 94)
+}
+
+#desc {
+    font-size: 15px;
+    margin-right: 120px;
+}
+
+.nav {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav a{
+    color: dimgray;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Pixelify Sans';
+    text-align: right;
+}
+
+.nav a:hover {
+    color: indianred;
+    text-decoration: underline;
+}
+
+#sameRow {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.title {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.projDescription {
+    font-size: 15px;
+    margin-top: -12px;
+}
