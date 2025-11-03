@@ -1,19 +1,58 @@
+@font-face {
+    font-family: new-romantics;
+    src: url(assets/fonts/ROMANTIC.TTF);
+}
+
+@font-face {
+    font-family: keroine-regular;
+    src: url(assets/fonts/KeroinePROTest-DouxExtreme.otf);
+}
+
+@font-face {
+    font-family: pixelify-sans;
+    src: url(assets/fonts/PixelifySans-Regular.ttf);
+}
+
+:root {
+    --background: #e6e6fa;
+    --accent-colour: #2B44FF;
+    --primary-colour:  #696969;
+    --primary-font: 'keroine-regular';
+    --accent-font: 'pixelify-sans';
+    --test-font: 'new-romantics';
+    --primary-fontsize: 15px;
+    --accent-fontsize: 35px;
+}
+
 body {
-    font-family: 'Instrument Serif';
+    font-family: var(--primary-font);
     padding: 35px 35px;
-    background-color: whitesmoke;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
+    color: var(--primary-colour);
+    letter-spacing: -1px;
+}
+
+::selection {
+    background-color: var(--accent-colour);
+    color: whitesmoke;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    max-width: 500px;
 }
 
 #header {
-    font-size: 35px;
-    font-family: 'Pixelify Sans';
-    color: rgb(94, 94, 94)
+    font-size: var(--accent-fontsize);
+    font-family: var(--accent-font);
+    color: var(--accent-colour);
 }
 
 #desc {
-    font-size: 15px;
+    font-size: var(--primary-fontsize);
     margin-right: 120px;
 }
 
@@ -24,15 +63,15 @@ body {
 }
 
 .nav a{
-    color: dimgray;
-    font-size: 15px;
+    color: var(--primary-colour);
+    font-size: var(--primary-fontsize);
     text-decoration: none;
-    font-family: 'Pixelify Sans';
+    font-family: var(--accent-font);
     text-align: right;
 }
 
 .nav a:hover {
-    color: indianred;
+    color: var(--accent-colour);
     text-decoration: underline;
 }
 
@@ -41,14 +80,17 @@ body {
     display: flex;
     align-items: center;
     margin-top: -40px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .title {
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
+    color: var(--accent-colour)
 }
 
 .projDescription {
-    font-size: 15px;
-    margin-top: -12px;
+    font-size: var(--primary-fontsize);
+    margin-top: -18px;
 }
