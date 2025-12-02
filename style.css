@@ -14,9 +14,9 @@
     --primary-colour:  #696969;
     --primary-font: 'keroine-regular';
     --accent-font: 'pixelify-sans';
-    --primary-fontsize: 13px;
+    --primary-fontsize: 16px;
     --accent-fontsize: 35px;
-    --title-fontsize: 16px;
+    --title-fontsize: 19px;
 }
 
 * {
