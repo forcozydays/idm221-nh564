@@ -8,6 +8,10 @@
     src: url(assets/fonts/PixelifySans-Regular.ttf);
 }
 
+@font-face {
+    font-family: kuai-le;
+    src: url(assets/fonts/ZCOOLKuaiLe-Regular.ttf)
+}
 :root {
     --background: #FFFEFF;
     --accent-colour: #D8B4C2;
@@ -17,6 +21,7 @@
     --primary-fontsize: 13px;
     --accent-fontsize: 35px;
     --title-fontsize: 16px;
+    --chi-font: 'kuai-le';
 }
 
 * {
@@ -30,6 +35,7 @@ body {
     color: var(--primary-colour);
     letter-spacing: -1px;
     font-size: var(--primary-fontsize);
+    text-wrap: pretty;
 }
 
 ::selection {
@@ -81,7 +87,8 @@ img {
 .title {
     font-size: var(--title-fontsize);
     font-style: italic;
-    color: var(--accent-colour)
+    color: var(--accent-colour);
+    padding-bottom: 5px;
 }
 
 .projDescription {
@@ -95,12 +102,23 @@ img {
     width: 100%;
     height: 100%;
     aspect-ratio: 313 / 192;
+    border-radius: 8px;
 }
 
 .specialText {
     font-style: italic;
     color: var(--accent-colour);
-    font-size: 13px;
+    font-size: var(--primary-fontsize);
+}
+
+.specialText1 {
+    color: var(--accent-colour);
+    font-size: var(--primary-fontsize);
+    margin-top: -15px;
+}
+
+.recipeTitle {
+    margin-top: 20px;
 }
 
 .sameRow {
@@ -158,4 +176,45 @@ img {
     width: 50%;
     height: 50%;
     padding-right: 30px;
+}
+
+#recipesBlock {
+    font-size: 0;
+    text-align: center;
+    max-width: 500px;
+}
+
+.recipe {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    font-size: var(--primary-fontsize);
+    margin-bottom: 10px;
+}
+
+.fullBox {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipeImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px 10px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--primary-colour);
+    font-size: var(--title-fontsize);
+    text-align: left;
 }
