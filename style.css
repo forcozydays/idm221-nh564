@@ -227,12 +227,12 @@ ul, ol {
 }
 
 .chi {
-    font-family: var(--chinese-font);
+    font-family: var(--chinese-font), serif;
 }
 
 #chi {
     margin-bottom: -30px;
-    font-family: var(--chinese-font);
+    font-family: var(--chinese-font), serif;
     margin-top: 50px;
     font-size: var(--primary-fontsize);
 }
