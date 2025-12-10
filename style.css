@@ -10,7 +10,7 @@
 
 :root {
     --background: #FFFEFF;
-    --accent-colour: #D8B4C2;
+    --accent-colour: #CC007B;
     --primary-colour:  #696969;
     --primary-font: 'keroine-regular';
     --accent-font: 'pixelify-sans';
@@ -28,7 +28,7 @@ body {
     padding: 35px 35px;
     background-color: var(--background);
     color: var(--primary-colour);
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     font-size: var(--primary-fontsize);
     text-wrap: pretty;
 }
@@ -142,7 +142,7 @@ img {
 
 .header1 {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 140px;
 }
 
 .heading1 {
@@ -189,4 +189,16 @@ img {
     color: var(--primary-colour);
     font-size: var(--title-fontsize);
     text-align: left;
+}
+
+.back {
+    text-decoration: none;
+    color: var(--primary-colour);
+    text-align: right;
+    display: block;
+}
+
+.back:hover {
+    color: var(--accent-colour);
+    text-decoration: underline;
 }
