@@ -8,12 +8,18 @@
     src: url(assets/fonts/PixelifySans-Regular.ttf);
 }
 
+@font-face {
+    font-family: chi;
+    src: url(assets/fonts/NotoSerifSC-VariableFont_wght.ttf);
+}
+
 :root {
     --background: #FFFEFF;
     --accent-colour: #CC007B;
     --primary-colour:  #696969;
     --primary-font: 'keroine-regular';
     --accent-font: 'pixelify-sans';
+    --chinese-font: 'pixel-chi';
     --primary-fontsize: 16px;
     --accent-fontsize: 35px;
     --title-fontsize: 19px;
@@ -42,6 +48,11 @@ img {
     width: 100%;
     height: auto;
     max-width: 500px;
+}
+
+ul, ol {
+    font-family: var(--chinese-font);
+    padding-left: 20px;
 }
 
 #header {
@@ -189,6 +200,7 @@ img {
     color: var(--primary-colour);
     font-size: var(--title-fontsize);
     text-align: left;
+    font-family: var(--chinese-font);
 }
 
 .back {
@@ -201,4 +213,36 @@ img {
 .back:hover {
     color: var(--accent-colour);
     text-decoration: underline;
+}
+
+.recipeImage1 {
+    margin-top: 30px;
+}
+
+.recipeTitle {
+    font-size: var(--title-fontsize);
+    color: var(--primary-colour);
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+.chi {
+    font-family: var(--chinese-font);
+}
+
+#chi {
+    margin-bottom: -30px;
+    font-family: var(--chinese-font);
+    margin-top: 50px;
+    font-size: var(--primary-fontsize);
+}
+
+.ingredientSection {
+    margin-bottom: -10px;
+    margin-top: 30px;
+    font-size: var(--primary-fontsize);
+}
+
+#allIngredients {
+    padding-left: 20px;
 }
