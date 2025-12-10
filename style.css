@@ -19,7 +19,7 @@
     --primary-colour:  #696969;
     --primary-font: 'keroine-regular';
     --accent-font: 'pixelify-sans';
-    --chinese-font: 'pixel-chi';
+    --chinese-font: 'chi';
     --primary-fontsize: 16px;
     --accent-fontsize: 35px;
     --title-fontsize: 19px;
@@ -53,6 +53,10 @@ img {
 ul, ol {
     font-family: var(--chinese-font);
     padding-left: 20px;
+}
+
+h3, h4, h5 {
+    font-weight: normal;
 }
 
 #header {
